@@ -17,7 +17,7 @@ header {
     align-items: center;
     background: #d7ede3;
     padding: 15px 40px;
-    border-radius: 0 0 20px 20px;
+    transition: 3s;
 }
 
 header .logo {
@@ -40,12 +40,14 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
     color: #0a4d1c;
-    transition: 0.3s;
+   
+
 }
 
 header nav a:hover {
     color: #1e9b50;
 }
+
 
 /* Menu secundário */
 .menu-secundario {
@@ -54,7 +56,7 @@ header nav a:hover {
     gap: 50px;
     background: #1e9b50;
     padding: 10px 0;
-    border-radius: 0 0 30px 30px;
+    
 }
 
 .menu-secundario a {
@@ -202,3 +204,94 @@ main h2 {
 .btn-criar:hover {
     background: #0a4d1c;
 }
+
+.rodape {
+    background-color: #196319;
+    color: #fff;
+    padding: 40px 20px 20px 20px;
+    font-family: 'Segoe UI', sans-serif;
+
+    position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  }
+  
+  .footer-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 90px; 
+  }
+  
+  .footer-coluna h3, .footer-coluna h4 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    color: #fff;
+  }
+  
+  .footer-coluna {
+    min-width: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-coluna h3 {
+    color: #79f830;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-coluna h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ddd;
+  }
+  
+  .footer-coluna ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-coluna ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-coluna ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-coluna ul li a:hover {
+    color: #faffe1ad;
+  }
+  
+  .footer-pagamentos h4 {
+    color: #91d650;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 22px;
+  }
+  
+  .pagamentos-icones {
+    display: flex;
+    gap:20px;
+    justify-content: flex-start;
+  }
+  
+  .footer-pagamentos i {
+    font-size: 36px;
+    margin-right: 15px;
+    vertical-align: middle;
+  }
+  .footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding-top: 5%;
+    font-size: 80%;
+    color: #888;
+    margin-top: 20px;
+  }
+  
