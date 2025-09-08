@@ -200,7 +200,15 @@ main h2 {
     text-decoration: none;
     transition: 0.3s;
 }
-
+.btn-voltar {
+  display: inline-block;
+  margin-top: 10px;
+  background: #147039;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  text-decoration: none;
+}
 .btn-criar:hover {
     background: #0a4d1c;
 }
