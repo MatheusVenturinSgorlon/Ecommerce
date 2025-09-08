@@ -294,3 +294,83 @@ main h2 {
     margin-top: 20px;
   }
   
+  /*começo do slider*/
+  .apresentacoes{
+    margin: 0 auto;
+    width: 800px;
+    height:400px;
+    overflow: hidden;
+  }
+
+  .slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+  }
+
+  .slides input{
+    display: none;
+  }
+
+  .slide{
+    width:25%;
+    position: relative;
+  }
+
+  .slide img{
+    width: 800px;
+  }
+
+  .manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -48px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+
+  .manual-btn:hover{
+    background-color: #fff;
+  }
+
+
+  .first {
+    width: 25%; /* se estiver mostrando 1 slide por vez */
+    transition: margin-left 0.5s;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left:0;
+  }
+
+  #radio2:checked ~ .first{
+    margin-left:-25%;
+  }
+
+  #radio3:checked ~ .first{
+    margin-left:-50%;
+  }
+
+  #radio4:checked ~ .first{
+    margin-left:-75%;
+  }
+
+  #radio5:checked ~ .first{
+    margin-left:-100%;
+  }
+
+  #radio6:checked ~ .first{
+    margin-left:-125%;
+  }
