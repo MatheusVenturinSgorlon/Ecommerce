@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -6,32 +7,25 @@
 }
 
 body {
-    background: #f8f6f0 url('img/fundo.png') no-repeat;
-    background-size: cover;
+    background-image: url('imgsEcomerce/SITE EcoLuxo (1).png'); 
+    background-size: cover;    
+    background-position: center;  
+    background-repeat: no-repeat; 
+    min-height: 100vh;            
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #d7ede3;
     padding: 15px 40px;
-    transition: 3s;
+    transition: 0.3s;
 }
 
 header .logo {
-   justify-items: center;
-    gap: 10px;
-}
-
-header h1 {
-    font-size: 28px;
-    color: #0a4d1c;
-}
-
-header h1 span {
-    color: #1e9b50;
+    display: flex;
+    align-items: center;
 }
 
 header nav a {
@@ -39,27 +33,22 @@ header nav a {
     text-decoration: none;
     font-weight: bold;
     color: #0a4d1c;
-   
-
 }
 
 header nav a:hover {
     color: #1e9b50;
 }
 
-
-/* Menu secundário */
 .menu-secundario {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    background: #1e9b50;
+    gap: 100px;
+    background: #00753d;
     padding: 10px 0;
-    
 }
 
 .menu-secundario a {
-    color: white;
+    color: #d7ede3;
     font-weight: bold;
     text-decoration: none;
 }
@@ -68,39 +57,37 @@ header nav a:hover {
     margin-right: 5px;
 }
 
-/* Produtos */
-main {
-    text-align: center;
+.produtos-secao {
     padding: 30px;
 }
 
-main h2 {
-    background: #cfe7d6;
+.produtos-secao h2 {
+    background: #c9dabb;
     display: inline-block;
     padding: 10px 25px;
     border-radius: 30px;
     color: #0a4d1c;
     margin-bottom: 30px;
+    text-align: left;
 }
 
-.produtos {
+.produtos-scroll {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
 }
+
 
 .card {
+    flex-shrink: 0;
+    min-width: 220px;
     background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     padding: 15px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
-    width: 200px;
-    transition: transform 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
+    text-align: center;
 }
 
 .card img {
@@ -121,95 +108,33 @@ main h2 {
     color: #555;
 }
 
-.login-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.login-box {
-    background: #cfe7d6;
-    padding: 40px;
-    border-radius: 20px;
-    text-align: center;
-    width: 350px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-.login-box h2 {
-    background: #1e9b50;
-    color: white;
-    padding: 10px;
-    border-radius: 30px;
-    margin-bottom: 10px;
-}
-
-.login-box p {
-    margin-bottom: 20px;
-    color: #0a4d1c;
-}
-
-.login-box label {
-    display: block;
+.quem-somos {
+    max-width: 1000px;
+    margin: 50px auto;
+    border-radius: 15px;
     text-align: left;
-    font-weight: bold;
-    color: #0a4d1c;
-    margin-top: 10px;
 }
 
-.login-box input {
+.quem-somos h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.quem-somos p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #34495e;
+}
+
+.apresentacoes {
+    margin: 20px auto 0;
     width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 2px solid #1e9b50;
-    border-radius: 20px;
-    outline: none;
-}
-
-.btn-login {
-    margin-top: 20px;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #1e9b50;
-    color: white;
-    font-weight: bold;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.btn-login:hover {
-    background: #0a4d1c;
-}
-
-.criar {
-    margin-top: 15px;
-    color: #0a4d1c;
-}
-
-.btn-criar {
-    display: inline-block;
-    margin-top: 10px;
-    background: #1e9b50;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 20px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-.btn-voltar {
-  display: inline-block;
-  margin-top: 10px;
-  background: #147039;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 20px;
-  text-decoration: none;
-}
-.btn-criar:hover {
-    background: #0a4d1c;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 15px;
 }
 
 .rodape {

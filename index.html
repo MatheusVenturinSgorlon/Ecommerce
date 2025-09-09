@@ -6,137 +6,76 @@
     <title>ECO LUXO</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
-
-
-    <!-- Header -->
-
-    <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo EcoLuxo">
-            <h1>ECO <span>LUXO</span></h1>
-        </div>
-
-        <nav>
-            <a href="#">Quem somos</a>
-            <a href="#">Produtos</a>
-            <a href="#">Contato</a>
-            <a href="login.html"><i class="fa fa-user"></i> Login</a>
-            <a href="#"><i class="fa fa-shopping-cart"></i> Carrinho</a>
-
-        </nav>
-
-    </header>
-
-    <!-- Menu de navegação extra -->
-    <div class="menu-secundario">
+     
+  <header>
+    <div class="logo">
+      <img src="imgsEcomerce/SITE_EcoLuxo.png" alt="Logo EcoLuxo" height="100px">
     </div>
+    
+    <nav>
+      <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
+      <a href="Carrinho.html"><i class="fa-solid fa-store"></i> Carrinho</a>
+      <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+    </nav>
+  </header>
+  
+<div class="menu-secundario">
+   <a href="#quem-somos">Quem somos</a>
+    <a href="#contato">Contato</a>
+</div>
 
-    <!-- Produtos -->
-    <main>
-        <h1>Conheça nossos produtos! </h1>
+<main>
 
-        <a href="Produtos.html">
-            <button>CONHECER</button>
-        </a>       
-          <br><br>
-          <h2>Ecobags personalizadas</h2>
-        <div class="produtos">
+    <section class="produtos-secao">
+        <h2>Ecobags personalizadas</h2>
+        <div class="produtos-scroll">
             <div class="card">
                 <img src="imgsEcomerce/bolsaMec.png" alt="Ecobag Curso Mecânica">
                 <p>Ecobag Curso Mecânica</p>
-                <span>R$ 25,00</span>
+                <span>R$ 15,00</span>
             </div>
             <div class="card">
                 <img src="imgsEcomerce/bolsaInf.png" alt="Ecobag Curso Informática">
                 <p>Ecobag Curso Informática</p>
-                <span>R$ 25,00</span>
+                <span>R$ 15,00</span>
             </div>
             <div class="card">
                 <img src="imgsEcomerce/bolsaEle.png" alt="Ecobag Curso Eletrônica">
                 <p>Ecobag Curso Eletrônica</p>
-                <span>R$ 25,00</span>
+                <span>R$ 15,00</span>
             </div>
             <div class="card">
                 <img src="imgsEcomerce/bolsaSla.png" alt="Ecobag Diversas">
                 <p>Ecobag Diversas</p>
-                <span>R$ 25,00</span>
+                <span>R$ 15,00</span>
             </div>
             <div class="card">
-                <img src="" alt="Botons">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHrDqS5iADRZ-8Ps3RGCqiq04NhmLI5AdWdQ&s" alt="Botons">
                 <p>Botons</p>
                 <span>R$ 5,00</span>
             </div>
-
-          </div><br>
-
-        <div class="apresentacoes">
-
-          <div class="slides">
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-            <input type="radio" name="radio-btn" id="radio6">
-            <!--Fim Radio Buttons-->
-
-            <!--Slide imagens-->
-            <div class="slide first">
-              <img src="imgsEcomerce/bolsaEle.png" alt="imagem1" />
-            </div>
-
-
-            <div class="slide">
-              <img src="imgsEcomerce/bolsaSla.png" alt="imagem2" />
-            </div>
-            <div class="slide">
-              <img src="imgsEcomerce/bolsaEle.png" alt="imagem3" />
-            </div>
-            <div class="slide">
-              <img src="imgsEcomerce/bolsaSla.png" alt="imagem4" />
-            </div>
-            <div class="slide">
-              <img src="imgsEcomerce/bolsaEle.png" alt="imagem5" />
-            </div>
-            <div class="slide">
-              <img src="imgsEcomerce/bolsaSla.png" alt="imagem6" />
-            </div>
-          <!--Fim do Slide-->
-
-          <!--Navigation auto-->
-          <div class="navigation-auto">
-
-            <div class="auto-btn1"></div>
-            <div class="auto-btn2"></div>
-            <div class="auto-btn3"></div>
-            <div class="auto-btn4"></div>
-            <div class="auto-btn5"></div>
-            <div class="auto-btn6"></div>
-
-          </div>
-            
         </div>
+    </section>
 
-        <div class="manual-navigation">
-
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-          <label for="radio5" class="manual-btn"></label>
-          <label for="radio6" class="manual-btn"></label>
-
+    <section class="quem-somos" id="quem-somos">
+        <h1>QUEM SOMOS</h1>
+        <p>
+            A EcoLuxo é uma marca de ecobags personalizadas que combina sustentabilidade, praticidade e individualidade. 
+            Formada por uma equipe de 6 pessoas, buscamos oferecer uma solução ecológica e única para quem deseja agregar 
+            estilo e responsabilidade ambiental ao seu dia a dia.
+            <br> Nossas ecobags são feitas para refletir a personalidade 
+            de cada cliente, pois acreditamos que cada escolha expressa quem somos. A EcoLuxo nasceu como um projeto acadêmico 
+            na Semana do Colégio Técnico Industrial, Prof. Isaac Portal Roldán, em Bauru. Nosso objetivo é gerar um impacto 
+            positivo no meio ambiente, oferecendo produtos funcionais e exclusivos.
+        </p>
         </div>
-        
-    </main>
+    </section>
 
-
-
-
-        <script src="script.js"></script>
+</main>
 
     <footer class="rodape">
         <div class="footer-container">
@@ -154,12 +93,11 @@
           <div class="footer-coluna">
             <h4>Ajuda</h4>
             <ul>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#" id="contato">Contato</a></li>
               <li><a href="#">Política de Privacidade</a></li>
             </ul>
           </div>
       
-          <!-- Seção de Formas de Pagamento -->
           <div class="footer-pagamentos">
       
             <h4>Formas de Pagamento</h4>
