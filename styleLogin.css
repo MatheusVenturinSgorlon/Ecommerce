@@ -1,9 +1,15 @@
+@font-face {
+    font-family: 'BreeSerif';
+    font-style: normal;
+    font-weight: normal;
+    src: url(fonts/BreeSerif-Regular.ttf);
+}
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: BreeSerif, sans-serif;
 }
 
 body {
@@ -13,6 +19,7 @@ body {
     background-repeat: no-repeat; 
     min-height: 100vh;            
 }
+
 .logo{
     display: flex;
     align-items: center;

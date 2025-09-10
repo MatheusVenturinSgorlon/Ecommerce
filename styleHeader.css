@@ -1,0 +1,230 @@
+@font-face {
+  font-family: 'BreeSerif';
+  font-style: normal;
+  font-weight: normal;
+  src: url(fonts/BreeSerif-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: BreeSerif, sans-serif;
+}
+
+body {
+    background-image: url('imgsEcomerce/SITE\ EcoLuxo\ \(1\).png'); 
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+    min-height: 100vh;            
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d7ede3;
+  padding: 15px 40px;
+  transition: 0.3s;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo img {
+  height: 80px;
+  width: auto;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #0a4d1c;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+header nav a:hover {
+  color: #1e9b50;
+}
+
+    .promo-bar {
+      background-color: #145214;
+      color: #fff;
+      text-align: center;
+      padding: 8px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    main h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      color: #196319;
+    }
+
+    main p {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 18px;
+      color: #555;
+    }
+
+
+    /*parte dos produtos*/
+    .produtos {
+      display: flex;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .produto {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .preco-antigo {
+      font-size: 14px;
+      color: #888;
+      text-decoration: line-through;
+      margin: 0;
+    }
+
+    .preco {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1a6b28;
+      margin: 5px 0;
+    }
+
+    .nome {
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      margin: 5px 0;
+    }
+
+    .parcelamento {
+      font-size: 14px;
+      color: #555;
+      margin: 5px 0;
+    }
+
+    .avaliacao {
+      font-size: 14px;
+      color: #f4c150;
+      margin: 5px 0;
+    }
+.btn-comprar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0a4d1c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-comprar:hover {
+  background-color: #196319;
+}
+
+
+
+    /*PARTE DO RODAPE E FOOTER*/
+    .rodape {
+      background-color: #196319;
+      color: #fff;
+      padding: 40px 20px 20px;
+    }
+
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footer-coluna h3,
+    .footer-coluna h4 {
+      margin-bottom: 10px;
+      color: #40a048;
+    }
+
+    .footer-coluna ul {
+      list-style: none;
+    }
+
+    .footer-coluna ul li {
+      margin-bottom: 8px;
+    }
+
+    .footer-coluna ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-coluna ul li a:hover {
+      color: #88fa88;
+    }
+
+    .footer-pagamentos {
+      text-align: center;
+    }
+
+    .pagamentos-icones img {
+      margin: 5px;
+      vertical-align: middle;
+      width: 30px;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.3);
+      padding-top: 10px;
+    }
+

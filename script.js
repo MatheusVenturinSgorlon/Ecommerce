@@ -1,27 +1,23 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('.next');
-const prev = document.querySelector('.prev');
-let current = 0;
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+  const totalSlides = slides.length;
+  let currentIndex = 0;
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if(i === index) slide.classList.add('active');
-    });
-}
+  function showSlide(index) {
+    currentIndex = (index + totalSlides) % totalSlides; 
+    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
 
-next.addEventListener('click', () => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
+  next.addEventListener('click', () => {
+    showSlide(currentIndex + 1);
+  });
+
+  prev.addEventListener('click', () => {
+    showSlide(currentIndex - 1);
+  });
 });
 
-prev.addEventListener('click', () => {
-    current = (current - 1 + slides.length) % slides.length;
-    showSlide(current);
-});
 
-// Auto slide a cada 5s
-setInterval(() => {
-    current = (current + 1) % slides.length;
-    showSlide(current);
-}, 5000);
