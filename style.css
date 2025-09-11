@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'BreeSerif';
+  src: url('fontes/BreeSerif-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+  body {
+      font-family: 'url(BreeSerif-Regular)', serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
 .menu-secundario {
     display: flex;
     justify-content: center;
@@ -80,12 +99,14 @@
     font-size: 2.5rem;
     margin-bottom: 20px;
     color: #2c3e50;
+    text-align: left;
 }
 
 .quem-somos p {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #34495e;
+    text-align: left;
 }
 
 .apresentacoes {

@@ -1,9 +1,9 @@
-@font-face {
-  font-family: 'BreeSerif';
-  font-style: normal;
-  font-weight: normal;
-  src: url(fonts/BreeSerif-Regular.ttf);
-}
+  @font-face {
+      font-family: 'BreeSerif';
+      src: url('fontes/BreeSerif-Regular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
 
 * {
   margin: 0;
