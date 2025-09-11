@@ -29,4 +29,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+ document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.btn-saiba').forEach(botao => {
+      botao.addEventListener('click', (e) => {
+        e.stopPropagation(); 
+        const desc = botao.nextElementSibling;
+        if(desc.style.display === 'block'){
+          desc.style.display = 'none';
+        } else {
+          desc.style.display = 'block';
+        }
+      });
+    });
+  });
+
+
 

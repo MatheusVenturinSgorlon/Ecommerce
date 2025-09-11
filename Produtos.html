@@ -10,7 +10,8 @@
     >
     <link rel="stylesheet" href="styleHeader.css">
     <link rel="stylesheet" href="styleProd.css">
-  
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +27,13 @@
       <a href="Carrinho.html"><i class="fa-solid fa-cart-shopping"></i> Carrinho</a>
       <a href="login.html"><i class="fa-solid fa-user"></i> Login</a>
     </nav>
+
+     <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
   </header>
 
 
@@ -34,52 +42,73 @@
   </div>
 
   <main>
-   <section class="produtos">
-    <article class="produto">
-      <a href="EcoBagEletro.php"><img src="imgsEcomerce/bolsaEle.png" alt="Ecobag Estampada"></a>
-      <p class="preco">R$15,00</p>
-      <p class="nome">EcoBag ELETRÔNICA</p>
-      <p class="parcelamento">Aceitamos PIX</p>
-      <p class="avaliacao">⭐⭐⭐⭐⭐</p>
-      <a href="Carrinho.html" class="btn-comprar">Comprar</a>
-    </article>
+  <section class="produtos">
+  <article class="produto">
+    <img src="imgsEcomerce/bolsaEle.png" alt="Ecobag Estampada">
+    <p class="preco">R$15,00</p>
+    <p class="nome">EcoBag ELETRÔNICA</p>
+    <p class="parcelamento">Aceitamos PIX</p>
+    <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+    <button class="btn-saiba">Saiba mais</button>
+    <div class="descricao-produto">
+      Esta EcoBag eletrônica é feita com material resistente, ideal para carregar seus gadgets com estilo.
+    </div>
+    <a href="Carrinho.html" class="btn-comprar">Comprar</a>
+  </article>
 
-    <article class="produto">
-      <a href="EcoBagInfo.php"><img src="imgsEcomerce/bolsaInf.png" alt="Ecobag Lisa"></a>
-      <p class="preco">R$15,00</p>
-      <p class="nome">EcoBag INFORMÁTICA</p>
-      <p class="parcelamento">Aceitamos PIX</p>
-      <p class="avaliacao">⭐⭐⭐⭐⭐</p>
-      <a href="Carrinho.html" class="btn-comprar">Comprar</a>
-    </article>
+  <article class="produto">
+    <img src="imgsEcomerce/bolsaInf.png" alt="Ecobag Lisa">
+    <p class="preco">R$15,00</p>
+    <p class="nome">EcoBag INFORMÁTICA</p>
+    <p class="parcelamento">Aceitamos PIX</p>
+    <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+    <button class="btn-saiba">Saiba mais</button>
+    <div class="descricao-produto">
+      EcoBag de Informática: resistente e prática para carregar livros, notebooks e acessórios do dia a dia.
+    </div>
+    <a href="Carrinho.html" class="btn-comprar">Comprar</a>
+  </article>
 
-    <article class="produto">
-      <a href="EcoBagMec.php"><img src="imgsEcomerce/bolsaMec.png" alt="Botton Verde"></a>
-      <p class="preco">R$15,00</p>
-      <p class="nome">EcoBag MECÂNICA</p>
-      <p class="parcelamento">Aceitamos PIX</p>
-      <p class="avaliacao">⭐⭐⭐⭐⭐</p>
-      <a href="Carrinho.html" class="btn-comprar">Comprar</a>
-    </article>
+  <article class="produto">
+    <img src="imgsEcomerce/bolsaMec.png" alt="Ecobag Mecânica">
+    <p class="preco">R$15,00</p>
+    <p class="nome">EcoBag MECÂNICA</p>
+    <p class="parcelamento">Aceitamos PIX</p>
+    <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+    <button class="btn-saiba">Saiba mais</button>
+    <div class="descricao-produto">
+      EcoBag Mecânica: feita com tecido reforçado, perfeita para carregar ferramentas leves ou materiais de estudo.
+    </div>
+    <a href="Carrinho.html" class="btn-comprar">Comprar</a>
+  </article>
 
-    <article class="produto">
-      <a href="EcoBagPerso.php"><img src="imgsEcomerce/bolsaSla.png" alt="Botton Verde"></a>
-      <p class="preco">R$15,00</p>
-      <p class="nome">EcoBags Personalizadas</p>
-      <p class="parcelamento">Aceitamos PIX</p>
-      <p class="avaliacao">⭐⭐⭐⭐⭐</p>
-      <a href="Carrinho.html" class="btn-comprar">Comprar</a>
-    </article>
+  <article class="produto">
+    <img src="imgsEcomerce/bolsaSla.png" alt="EcoBags Personalizadas">
+    <p class="preco">R$15,00</p>
+    <p class="nome">EcoBags Personalizadas</p>
+    <p class="parcelamento">Aceitamos PIX</p>
+    <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+    <button class="btn-saiba">Saiba mais</button>
+    <div class="descricao-produto">
+      EcoBags personalizadas: escolha seu modelo e estampa favorita para levar estilo e sustentabilidade.
+    </div>
+    <a href="Carrinho.html" class="btn-comprar">Comprar</a>
+  </article>
 
-    <article class="produto">
-      <a href="Botons.php"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5460vtVj_DGjABKX4sFdGW7WFjEWvCJdcQ&s" alt="Perfume"></a>
-      <p class="preco">R$25,00</p>
-      <p class="nome">Perfumes</p>
-      <p class="parcelamento">Aceitamos PIX</p>
-      <p class="avaliacao">⭐⭐⭐⭐⭐</p>
-      <a href="Carrinho.html" class="btn-comprar">Comprar</a>
-    </article>
-  </section>
+  <article class="produto">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5460vtVj_DGjABKX4sFdGW7WFjEWvCJdcQ&s" alt="Perfume">
+    <p class="preco">R$25,00</p>
+    <p class="nome">Perfumes</p>
+    <p class="parcelamento">Aceitamos PIX</p>
+    <p class="avaliacao">⭐⭐⭐⭐⭐</p>
+    <button class="btn-saiba">Saiba mais</button>
+    <div class="descricao-produto">
+      Perfumes sofisticados e de longa duração, ideais para uso diário ou presente especial.
+    </div>
+    <a href="Carrinho.html" class="btn-comprar">Comprar</a>
+  </article>
+</section>
+
   </main>
 
 </body>
