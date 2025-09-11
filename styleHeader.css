@@ -63,14 +63,7 @@ header nav a:hover {
   color: #1e9b50;
 }
 
-    .promo-bar {
-      background-color: #145214;
-      color: #fff;
-      text-align: center;
-      padding: 8px;
-      font-size: 14px;
-      font-weight: bold;
-    }
+   
 
     main {
       max-width: 1200px;
@@ -90,85 +83,6 @@ header nav a:hover {
       font-size: 18px;
       color: #555;
     }
-
-
-    /*parte dos produtos*/
-    .produtos {
-      display: flex;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .produto {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 15px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .produto:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .produto img {
-      width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .preco-antigo {
-      font-size: 14px;
-      color: #888;
-      text-decoration: line-through;
-      margin: 0;
-    }
-
-    .preco {
-      font-size: 18px;
-      font-weight: bold;
-      color: #1a6b28;
-      margin: 5px 0;
-    }
-
-    .nome {
-      font-size: 16px;
-      font-weight: 500;
-      color: #333;
-      margin: 5px 0;
-    }
-
-    .parcelamento {
-      font-size: 14px;
-      color: #555;
-      margin: 5px 0;
-    }
-
-    .avaliacao {
-      font-size: 14px;
-      color: #f4c150;
-      margin: 5px 0;
-    }
-.btn-comprar {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: #0a4d1c;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.btn-comprar:hover {
-  background-color: #196319;
-}
-
 
 
     /*PARTE DO RODAPE E FOOTER*/
@@ -228,3 +142,57 @@ header nav a:hover {
       padding-top: 10px;
     }
 
+ @media screen and (max-width: 992px) {
+  header {
+    padding: 15px 20px;
+  }
+  header nav a {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  header nav {
+    flex-direction: column;
+    gap: 8px;
+  }
+  header nav a {
+    margin: 5px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 20px;
+    text-align: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    display: none; 
+    width: 100%;
+    gap: 10px;
+  }
+
+  header nav a {
+    margin: 0;
+    font-size: 1.1rem;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
+
+header nav.active {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
