@@ -47,9 +47,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-.login-box:hover {
-    transform: translateY(-5px);
-}
 
 .login-box h2 {
     background: #1e9b50;
