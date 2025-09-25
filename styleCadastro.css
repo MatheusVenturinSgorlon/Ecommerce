@@ -2,10 +2,12 @@
      
       background-image: url('imgsEcomerce/SITE\ EcoLuxo\ \(1\).png'); 
       flex-direction: column;
-      min-height: 50vh;
+      min-height: 100vh;
    }
-
+   /*COMO COLOCA ESSA MERDA NO MEIO????*/
     .container {
+      display: grid;
+      place-self: center;
       background: #d2dace;
       padding: 40px 40px;
       border-radius: 20px;
